@@ -1,20 +1,4 @@
-IXOPAY PHP Client
-==============
-
-[![Packagist](https://img.shields.io/packagist/v/ixopay/ixopay-php-client.svg)](https://packagist.org/packages/ixopay/ixopay-php-client)
-[![PHP Version](https://img.shields.io/packagist/php-v/ixopay/ixopay-php-client.svg)](https://packagist.org/packages/ixopay/ixopay-php-client)
-[![License](https://img.shields.io/github/license/ixopay/php-ixopay.svg)](LICENSE)
-
-## Installation via composer:
-
-```sh
-composer require ixopay/ixopay-php-client
-```
-
-## Documentation
-
-Learn more about IXOPAY by reading its [Documentation](https://gateway.ixopay.com/documentation)
-
+THIS IS NOT MY PACKAGE. I'M JUST HOSTING IT ON GITHUB. 
 ## Usage:
 
 ```php
