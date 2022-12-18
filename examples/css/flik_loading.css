@@ -1,0 +1,282 @@
+body {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	background: #CCAACC;
+	font-family: OpenSans-Regular;
+	/* padding-bottom: 25%; */
+	letter-spacing: normal;
+	min-height: 100vh;
+	/* min-height: -webkit-fill-available; */
+	position: relative;
+	padding-bottom: 124px;
+	box-sizing: border-box;
+}
+
+.font-semibold {
+	font-family: OpenSans-SemiBold;
+}
+.font-bold {
+	font-family: OpenSans-Bold;
+}
+
+#containerHeader {
+	display: flex;
+	justify-content: center;
+	padding-top: 34px;
+	margin-bottom: 15px;
+}
+
+#bankartPicture {
+	width: 154px;
+	height: 26px;
+}
+
+#containerBody {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#loadingBar {
+	min-height: 200px;
+	/* min-width: 200px; */
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 15px;
+
+	transform: scale(0.72);
+	margin-top: -20px;
+}
+
+#timer {
+	position: absolute;
+	color: #0460BD;
+	font-size: 200%;
+	font-weight: normal;
+	font-family: OpenSans-SemiBold;
+	z-index: 1;
+	margin-top: 70px;
+}
+
+#bodyText {
+	font-family: OpenSans-SemiBold;
+	color: #243F60;
+	font-weight: normal;
+	font-size: 18px;
+	text-align: center;
+	margin-top: -20px;
+}
+
+#bodyText p {
+	font-size: 18px;
+	margin: 0;
+	line-height: 25px;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+	#bodyText p {
+		font-weight: normal;
+		letter-spacing: 0;
+		font-family: OpenSans-SemiBold;
+	}
+}
+
+#bodyText div {
+	margin-top: 60px;
+	margin-bottom: 30px;
+	line-height: 27px;
+}
+
+@media screen and (max-width: 320px) {
+	#bodyText div {
+		margin-top: 30px;
+	}
+}
+
+#containerFooter {
+	box-sizing: border-box;
+	display:flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	bottom: 0;
+	padding: 21px 12px 21px;
+	border-top: 1px solid black;
+	background-color: #CCAACC;
+	bottom: 0;
+	box-sizing: border-box;
+	width: 100%;
+	position: absolute;
+}
+
+#footerIcons {
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	margin-bottom: 20px;
+}
+
+#footerText {
+	color: #203F63;
+	font-size: 2.5vw;
+	margin: 0;
+}
+
+#footerText a {
+	color: #0460BD;
+}
+
+#flikIcon {
+	width: 50px;
+	/* content: url("Bankart_flik_assets/flik.svg"); */
+}
+
+span#procent {
+	font-size: 20px;
+	font-family: OpenSans-Bold;
+	font-weight: bold;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #0460BD;
+}
+
+svg {
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(-90deg);
+}
+
+#circle{
+    stroke: rgba(4, 96, 189, 1);
+    stroke-width: 22;
+    fill: transparent;
+    stroke-dasharray: 440;
+	animation: 300s circletimer linear;
+}
+
+#circle2{
+    stroke:  rgba(173, 200, 255, 0.5);
+    stroke-width: 22;
+    fill: transparent;
+}
+
+#timer{
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(4, 96, 189, 1);
+  font-size: 42px;
+}
+
+@keyframes circletimer {
+  to{
+    stroke-dashoffset: 440;
+  }
+}
+.bankartLink {
+	font-family: OpenSans-Bold;
+}
+
+@media only screen and (min-width: 786px) {
+	html {
+		height: 100%;
+	}
+
+	body {
+		margin: 0;
+		padding-bottom: 90px;
+	}
+
+	#containerHeader {
+		padding-top: 60px;
+		margin-bottom: 90px;
+	}
+
+	#bankartPicture {
+		width: 270px;
+		height: 46px;
+	}
+
+	#loadingBar {
+		margin-bottom: 45px;
+		transform: scale(1);
+		margin-top: 0;
+	}
+
+	span#procent {
+		font-size: 21px;
+	}
+
+	#timer {
+		position: absolute;
+		color: #0460BD;
+		font-size: 200%;
+		z-index: 1;
+		margin-top: 70px;
+	}
+
+	#bodyText {
+		font-size: 18px;
+		margin-bottom: 0;
+		padding-top: 0;
+	}
+
+	#bodyText p {
+		font-size: 24px;
+		line-height: 33px;
+		margin: 0;
+	}
+
+	#bodyText div {
+		margin-top: 78px;
+	}
+	
+	#bodyText div p {
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	#containerFooter {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+		position: absolute;
+		padding: 18px 38px;
+	}
+
+	#footerIcons {
+		margin: 0;
+		float: right;
+	}
+	
+	/*
+	#flikIcon {
+		 margin-right: 2vw; 
+	}
+*/
+
+	#footerText {
+		float: left;
+		font-size: 16px;
+		font-family: OpenSans-Regular;
+	}
+	
+	#footerText a {
+		color: #0460BD;
+	}
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+	#flikIcon {
+		content: url("Bankart_flik_assets/flik.png");
+		max-width: 50px;
+		max-height: 50px;
+	}
+}

@@ -1,0 +1,23 @@
+{
+    "name": "bankart/bankart-php-client",
+    "description": "Bankart Client for PHP",
+    "keywords": [
+        "bankart"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=5.6",
+        "ext-curl": "*",
+        "psr/log": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PaymentGatewayJson\\Client\\": "src/"
+        }
+    },
+    "scripts": {
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
